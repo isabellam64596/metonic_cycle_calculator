@@ -1,0 +1,14 @@
+[project]
+name = "metonic-cycle-calculator"
+version = "0.1.0"
+description = "Python library for computing Metonic cycle position and Paschal full moon dates."
+requires-python = ">=3.10"
+dependencies = []
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
