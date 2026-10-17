@@ -32,3 +32,10 @@ The exported names are:
 ## Edge case to know about
 
 The golden-number formula `(year % 19) + 1` means the cycle "restarts" at years where `year % 19 == 0` (golden number 19). Do not assume golden number 1 always falls on a round-numbered year. For example, the cycle containing 2024 starts in 2014, not 2020.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
