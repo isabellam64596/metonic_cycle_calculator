@@ -1,6 +1,6 @@
 [project]
 name = "metonic-cycle-calculator"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python library for computing Metonic cycle position and Paschal full moon dates."
 requires-python = ">=3.10"
 dependencies = []
